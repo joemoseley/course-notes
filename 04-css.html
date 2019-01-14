@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Data Viz: CSS</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <header>
+      <h1>CSS</h1>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Cascading Style Sheets</h2>
+
+        <p>CSS is a language used to describe the presentation of markup.</p>
+      </section>
+
+
+      <section>
+        <h2>Applying CSS</h2>
+
+        <ul>
+          <li><code>style</code> attribute (inline styles)</li>
+          <li><code>&lt;style&gt;</code> element</li>
+          <li>external style sheet</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2><code>style</code> attribute</h2>
+
+        <p><code>style</code> is a global attribute.</p>
+
+        <p>Using the attribute will override styles declared in a <code>&lt;style&gt;</code> tag or a external style sheet.</p>
+
+        <p><code>&lt;p style="color: red;"&gt;This is a sentence&lt;/p&gt;</code></p>
+      </section>
+
+
+      <section>
+        <h2><code>&lt;style&gt;</code> element</h2>
+
+        <p>The <code>&lt;style&gt;</code> element is included in the <code>&lt;head&gt;</code> of a document.</p>
+
+        <pre>&lt;style&gt;<br/>  /* styles go here */<br/>&lt;/style&gt;</pre>
+      </section>
+
+
+      <section>
+        <h2>External Style Sheet</h2>
+
+        <p>CSS can be stored by itself in a file.</p>
+
+        <p>Within the <code>&lt;head&gt;</code> of each HTML file, link to the style sheet file.</p>
+
+        <p><code>&lt;link href="path/to/css/style.css" rel="stylesheet" /&gt;</code></p>
+
+        <p>All CSS rules in this file will apply to any HTML document which links to it.</p>
+      </section>
+
+
+      <section>
+        <h2>Which method to use?</h2>
+
+        <p>If a style you plan to use will be repurposed multiple times, consider adding it to a <code>&lt;style&gt;</code> element on the page or an external style sheet.</p>
+
+        <pre>&lt;style&gt;<br/>  circle { fill: red; }<br/>&lt;/style&gt;</pre>
+
+        <p>If the style will change briefly (through interactivity), it is okay to use the <code>style</code> attribute.</p>
+      </section>
+
+
+      <section>
+        <img src="img/04-css-trinity.png" alt="Structure, Presentation, Behavior" />
+        <p><small><em>From "The Art and Science of Web Design" by Jeff Veen</em></small></p>
+      </section>
+
+
+      <section>
+        <h2>CSS Rules</h2>
+
+        <p><code>selector { property: value; }</code></p>
+      </section>
+
+
+      <section>
+        <h2>Selectors</h2>
+
+        <p>The <em>selector</em> identifies the part of HTML to be styled.</p>
+
+        <ul>
+          <li>type (<code>body</code>, <code>p</code>, <code>abbr</code>)</li>
+          <li>id (<code>#preamble</code>)</li>
+          <li>class (<code>.branches-of-gov</code>)</li>
+          <li>descendant (<code>nav li</code>)</li>
+          <li>child (<code>ul &gt; li</code>)</li>
+          <li>adjacent sibling (<code>h1 + p</code>)</li>
+          <li>general sibling (<code>p ~ p</code>)</li>
+          <li>attribute (<code>abbr[title]</code>)</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Pseudo-classes</h2>
+
+        <p>Pseudo-classes refer to the <em>state</em> of an element -- how is it interacted with by a user or the Document Object Model (DOM).</p>
+
+        <p>These are preceded by a single colon.</p>
+
+        <ul>
+          <li><code>:hover</code>: when a user hovers over the element</li>
+          <li><code>:first-child</code>: the first element in a group of siblings</li>
+          <li><code>:visited</code>: a link which has been visited</li>
+        </ul>
+
+        <p><code>a:hover { color: navy; }</code></p>
+      </section>
+
+
+      <section>
+        <h2>Pseudo-elements</h2>
+
+        <p>Pseudo-elements select very specific parts of an element. These are preceded by a double colon (<code>::</code>).</p>
+
+        <ul>
+          <li><code>::after</code>: space after an element</li>
+          <li><code>::before</code>: space before</li>
+          <li><code>::first-letter</code>: first character</li>
+          <li><code>::first-line</code>: first line</li>
+        </ul>
+
+        <p><code>p::first-line { font-weight: bold; }</code></p>
+      </section>
+
+
+      <section>
+        <h2>Declaration</h2>
+
+        <p>A declaration (all enclosed within the curly braces <code>{ }</code>) is comprised of a property and value, and ends by a semi-colon (<code>;</code>).</p>
+
+        <p><code>selector <strong>{ property: value; }</strong></code></p>
+
+        <p>A selector can have multiple declarations.</p>
+
+        <pre>selector {<br/>  property: value;<br/>  property2: value2;<br/>}</pre>
+      </section>
+
+
+      <section>
+        <h2>Properties &amp; Values</h2>
+
+        <p>A property and its value are separated by a colon (<code>:</code>).</p>
+
+        <p>There are <a href="http://www.htmldog.com/references/css/properties/">hundreds of properties</a>. Values depend on the property.</p>
+      </section>
+
+
+      <section>
+        <h2>SVG &amp; CSS</h2>
+
+        <p>There are a few properties unique to styling SVG:</p>
+
+        <ul>
+          <li><code>fill</code>: the color of the element</li>
+          <li><code>stroke</code>: the color of the element's outline</li>
+          <li><code>stroke-width</code>: the width of the element's outline</li>
+        </ul>
+
+      </section>
+
+
+
+
+    <!--
+      <section>
+        <h2>CARD TITLE</h2>
+
+        <p>NOTES</p>
+
+        <ul>
+          <li>ITEM 1</li>
+          <li>ITEM 2</li>
+          <li>ITEM 3</li>
+        </ul>
+
+      </section>
+    -->
+
+    </main>
+
+    <footer>
+      <p><a href="index.html">&laquo; Course Notes</a></p>
+    </footer>
+
+  </body>
+</html>

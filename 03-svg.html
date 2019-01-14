@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Data Viz: SVG</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <header>
+      <h1>SVG</h1>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Scalable Vector Graphics</h2>
+
+        <p>SVG is a markup language which describes vector graphics for the Web.</p>
+      </section>
+
+
+      <section>
+        <h2><code>svg</code></h2>
+
+        <p>The <code>svg</code> element define where our vector graphics will be rendered.</p>
+
+        <p>It is necessary to define its dimensions.</p>
+
+        <p><code>&lt;svg width="600" height="300"&gt;&lt;/svg&gt;</code></p>
+      </section>
+
+
+      <section>
+        <h2><code>svg</code> coordinates</h2>
+
+        <ul>
+          <li>all drawing begins in the top, left corner</li>
+          <li>x-axis runs horizontally</li>
+          <li>y-axis runs vertically</li>
+        </ul>
+
+        <img src="img/03-svg-coordinates.svg" alt="SVG coordinates"/>
+      </section>
+
+
+      <section>
+        <h2><code>rect</code></h2>
+
+        <ul>
+          <li>draws a rectangle</li>
+          <li><code>x</code>, <code>y</code>: the starting point (top, left)</li>
+          <li><code>width</code>, <code>height</code>: dimensions</li>
+        </ul>
+
+        <p><code>&lt;rect x="20" y="10" width="100" height="50" /&gt;</code></p>
+      </section>
+
+
+      <section>
+        <h2><code>circle</code></h2>
+
+        <ul>
+          <li>draws a circle/ellipse</li>
+          <li><code>cx</code>, <code>cy</code> the starting point from the center</li>
+          <li><code>r</code>: radius</li>
+          <li><code>rx</code>, <code>ry</code>: radius for x-axis, y-axis (ellipse only)</li>
+        </ul>
+
+        <p><code>&lt;circle cx="200" cy="100" r="20" /&gt;</code></p>
+      </section>
+
+
+      <section>
+        <h2><code>line</code></h2>
+
+        <ul>
+          <li>draws a line</li>
+          <li><code>x1</code>, <code>y1</code>: starting point</li>
+          <li><code>x2</code>, <code>y2</code>: end point</li>
+          <li><code>stroke</code>: required to make line visible</li>
+        </ul>
+
+        <p><code>&lt;line x1="20" y1="20" x2="50" y2="50" stroke="black" /&gt;</code></p>
+      </section>
+
+
+      <section>
+        <h2>Additional SVG Elements</h2>
+
+        <p><code>&lt;g&gt;</code>: groups related SVG elements</p>
+
+        <p><code>&lt;text&gt;</code>: used for labels</p>
+
+        <p><code>&lt;polygon&gt;</code>: a complex shape defined by x, y coordinates</p>
+
+        <p><code>&lt;path&gt;</code>: a complex shape including curves which may be open or closed</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p><a href="index.html">&laquo; Course Notes</a></p>
+    </footer>
+
+  </body>
+</html>

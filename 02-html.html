@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Data Viz: HTML</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <header>
+      <h1>HTML</h1>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>HyperText Markup Language</h2>
+
+        <p>HTML is <em>semantic</em>. Use the language to <em>describe content</em>.</p>
+      </section>
+
+
+      <section>
+        <h2>Elements</h2>
+
+        <p>Elements are also known as "tags."</p>
+
+        <p>(Most) elements have an opening and closing tag.</p>
+
+        <p><code>&lt;element&gt;content&lt;/element&gt;</code></p>
+      </section>
+
+
+      <section>
+        <h2>Attributes &amp; Values</h2>
+
+        <p>Elements may contain additional "settings" — <em>attributes</em> and their <em>values</em>.</p>
+
+        <p>Attributes (and values) only appear in the opening tag.</p>
+
+        <p><code>&lt;element attribute="value"&gt;content&lt;/element&gt;</code></p>
+      </section>
+
+
+      <section>
+        <p><code>&lt;p class="intro"&gt;This is a sentence.&lt;/p&gt;</code></p>
+
+        <ol>
+          <li>What is the <strong>element</strong>?</li>
+          <li>What is the <strong>attribute</strong>?</li>
+          <li>What is the <strong>value</strong>?</li>
+        </ol>
+      </section>
+
+
+      <section>
+        <h2>Basic Elements</h2>
+
+        <p>Basic elements describe our page.</p>
+
+        <p><code>&lt;html&gt;</code>: defines the HTML document.</p>
+
+        <p><code>&lt;head&gt;</code>: contains information about the document.</p>
+
+        <p><code>&lt;body&gt;</code>: contains content to be displayed in the browser window.</p>
+      </section>
+
+
+      <section>
+        <h2>Semantic Elements</h2>
+
+        <p><code>&lt;h1&gt;</code> ... <code>&lt;h6&gt;</code>: headings</p>
+
+        <p><code>&lt;p&gt;</code>: paragraph</p>
+
+        <p><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>: unordered, ordered list</p>
+
+        <p><code>&lt;li&gt;</code>: list item</p>
+
+        <p><code>&lt;a&gt;</code>: hyperlink</p>
+
+        <p><code>&lt;em&gt;</code>: emphasis (renders italic)</p>
+      </section>
+
+
+      <section>
+        <h2>Generic Elements</h2>
+
+        <p>Elements used to solely to group other elements for the purpose of styling.</p>
+
+        <p><code>&lt;div&gt;</code>: a generic block element</p>
+
+        <p><code>&lt;span&gt;</code>: a generic inline element</p>
+      </section>
+
+
+      <section>
+        <h2>Self-closing elements</h2>
+
+        <p>Elements which do not surround content are self-closing.</p>
+
+        <p>A slash is placed at the end of an opening tag.</p>
+
+        <p><code>&lt;img /&gt;</code>: an image</p>
+
+        <p><code>&lt;meta /&gt;</code> page information</p>
+      </section>
+
+
+      <section>
+        <h2>Comments</h2>
+
+        <p>Comments are notes added to code do not appear in the browser.</p>
+
+        <p>Think of them as documentation or reminders to your future self!</p>
+
+        <p><code>&lt;!-- This is a comment! --&gt;</code></p>
+      </section>
+
+
+      <section>
+        <h2>Block vs. Inline</h2>
+
+        <p>The amount of space elements take up can be described as <em>block</em> or <em>inline</em>.</p>
+
+        <p><strong>Block elements...</strong></p>
+
+        <ul>
+          <li>take up the entire width made available to them</li>
+          <li>begin on and create new lines</li>
+          <li>may contain other block or inline elements</li>
+        </ul>
+
+        <p><strong>Inline elements...</strong></p>
+
+        <ul>
+          <li>only take up the space within their surrounding tags</li>
+          <li>do not begin on or create lines</li>
+          <li>may only contain other inline elements</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2><code>id</code> &amp; <code>class</code></h2>
+
+        <p><code>id</code> and <code>class</code> are global attributes. They can be used with any element.</p>
+
+        <p><strong><code>id</code></strong>...</p>
+
+        <ul>
+          <li>makes an element unique</li>
+          <li>can be used only <strong>once</strong></li>
+        </ul>
+
+        <p><strong><code>class</code></strong>...</p>
+
+        <ul>
+          <li>can be used multiple times</li>
+          <li>can use multiple values (separated by spaces)</li>
+        </ul>
+
+        <p>Values should...</p>
+
+        <ul>
+          <li>start with a letter or underscore</li>
+          <li>be lowercase</li>
+          <li>provide context</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Best Practices</h2>
+
+        <ul>
+          <li>write elements, attributes and values in lower case</li>
+          <li>always close tags</li>
+          <li>properly nest code</li>
+          <li>double quote attribute values</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Is it valid?</h2>
+
+        <p>The W3C provides a <a href="http://validator.w3.org/">validator</a> to check HTML for standards compliance.</p>
+
+        <ul>
+          <li>ensures forward, backward compatibility</li>
+          <li>limits issues when adding CSS, JavaScript</li>
+          <li>can root out errors, bugs</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <p><a href="index.html">&laquo; Course Notes</a></p>
+    </footer>
+
+  </body>
+</html>
